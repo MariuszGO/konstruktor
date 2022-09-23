@@ -17,6 +17,7 @@ public:
 	uczen(string imie, string nazwisko) {
 		this->imie = imie;
 		this->nazwisko = nazwisko;
+		this->wiek = 0;
 	}
 
 	uczen() {
@@ -27,7 +28,8 @@ public:
 
 	void wyswietl(void) {
 		cout << "Imie: " << this->imie<<endl;
-
+		cout << "Nazwisko: " << this->nazwisko << endl;
+		cout << "Wiek: " << this->wiek << endl;
 	}
 	
 };
@@ -38,4 +40,6 @@ int main() {
 	uczen* u2 = new uczen("Adam", "Nowak");
 	uczen* u3 = new uczen();
 	u1->wyswietl();
+	u2->wyswietl();
+	u3->wyswietl();
 }
