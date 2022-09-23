@@ -26,6 +26,12 @@ public:
 		this->wiek = 0;
 	}
 
+	~uczen() { //deklarcja destrktora
+		cout << "działa destruktor";
+	}
+
+
+
 	void wyswietl(void) {
 		cout << "Imie: " << this->imie<<endl;
 		cout << "Nazwisko: " << this->nazwisko << endl;
@@ -42,4 +48,8 @@ int main() {
 	u1->wyswietl();
 	u2->wyswietl();
 	u3->wyswietl();
+	
+	delete u1;
+	delete u2;
+	delete u3;
 }
